@@ -1,0 +1,3 @@
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 1/Assignment 1 C++/cmake-build-debug/CMakeFiles/Assignment_1_C__.dir
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 1/Assignment 1 C++/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 1/Assignment 1 C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir

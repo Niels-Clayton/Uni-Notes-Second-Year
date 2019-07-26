@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 3/dbms.cc
+dbms.hh
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 3/dbms.hh
+stdlib.h
+-
+cstdio
+-
+
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 3/dbms.hh
+
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 3/t34test.cc
+iostream
+-
+dbms.hh
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 3/dbms.hh
+

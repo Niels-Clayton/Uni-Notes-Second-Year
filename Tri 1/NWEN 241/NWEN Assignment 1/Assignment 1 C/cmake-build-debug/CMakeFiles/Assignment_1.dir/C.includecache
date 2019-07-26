@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 1/Assignment 1 C/editor.c
+editor.h
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 1/Assignment 1 C/editor.h
+stdio.h
+-
+string.h
+-
+
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 1/Assignment 1 C/editor.h
+

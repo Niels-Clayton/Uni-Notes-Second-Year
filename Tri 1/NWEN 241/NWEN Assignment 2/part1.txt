@@ -1,0 +1,50 @@
+claytoniel
+300437590
+
+Task 1:
+
+1.	float *pointer_to_float;
+2.	long* func1(int a, int b);
+3.	char* func2(const char *a, const char *b);
+4.	int* array_of_pointers[20];
+5.	char* array_strings[4] = {"cyan", "magenta", "yellow", "black"};
+
+
+Task 2:
+
+1.	The numerical value of &u will be 1100
+2.	The numerical value of &v will be 1101
+3.	After line 2, pv will be assigned 1101
+4.	After line 4, the numerical value of *pv will be 66
+5.	After line 5, u will be assigned numerical 67, or as a character it will be 'C'
+
+
+Task 3:
+
+1.	this code will output: 
+	57	80
+	80	80  
+
+2.	The first output is the value contained by int1, which is set in the last line of the code to be 57.
+	the second output is the value contained by int2, the memory address of int2 is pointed to by both 
+	int1Ptr, and int2Ptr because of the line " int1Ptr = int2Ptr;", then the value at that memory address 
+	of int2 is set to 80 in the line " *int1Ptr = 80;", therfor the output is 80.
+	Finally since both int1Ptr, and int2Ptr point to the memory address of int2, they will both point to 
+	the value contained by int2 which is 80.
+
+Task 4:
+
+1.	The numerical value of 'a' will be 1102
+2.	The numerical value of 'ppa' will be 1118
+3.	The numerical value of '*ppa + 2' will be 1106
+
+Task 5:
+
+1.	
+	for (string* i = strPtr; i < strPtr+5; i++) {
+    		cout<< *(i)<< " ";
+	}
+2.	
+	delete []strPtr;
+
+

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 1/part3/viewing_buffer_editor.cpp
+viewing_buffer_editor.h
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 1/part3/viewing_buffer_editor.h
+
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 1/part3/viewing_buffer_editor.h
+iostream
+-
+cstring
+-
+

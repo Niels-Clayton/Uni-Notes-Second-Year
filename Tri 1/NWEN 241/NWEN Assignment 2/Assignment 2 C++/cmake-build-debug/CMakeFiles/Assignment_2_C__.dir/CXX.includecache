@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 2/Assignment 2 C++/editor2.hh
+string
+-
+
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 2/Assignment 2 C++/t11test.cc
+iostream
+-
+editor2.hh
+C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 2/Assignment 2 C++/editor2.hh
+
