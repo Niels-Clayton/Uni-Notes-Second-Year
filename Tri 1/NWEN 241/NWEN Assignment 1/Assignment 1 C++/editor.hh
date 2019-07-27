@@ -1,9 +1,4 @@
-/**
- * editor.hh
- */
-
-#ifndef __EDITOR_HH__
-#define __EDITOR_HH__
+#pragma once
 
 #include <iostream>
 #include <cstring>
@@ -36,5 +31,3 @@ namespace editor
     };
 }
 
-
-#endif /* __EDITOR_HH__ */ 
