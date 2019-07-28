@@ -1,3 +1,0 @@
-"C:\Users\Niels Clayton\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\183.5429.37\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Assignment_2_C.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\Assignment_2_C.dir/objects.a @CMakeFiles\Assignment_2_C.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\Assignment_2_C.dir/objects.a -Wl,--no-whole-archive  -o Assignment_2_C.exe -Wl,--out-implib,libAssignment_2_C.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Assignment_2_C.dir\linklibs.rsp

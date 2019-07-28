@@ -1,3 +1,0 @@
-"C:\Users\Niels Clayton\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\191.6707.69\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Test_5.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\Test_5.dir/objects.a @CMakeFiles\Test_5.dir\objects1.rsp
-C:\MinGW\bin\g++.exe  -Wall -Wextra -g   -Wl,--whole-archive CMakeFiles\Test_5.dir/objects.a -Wl,--no-whole-archive  -o Test_5.exe -Wl,--out-implib,libTest_5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Test_5.dir\linklibs.rsp

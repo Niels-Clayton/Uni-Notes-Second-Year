@@ -1,3 +1,0 @@
-C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 1/part3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 1/part3/cmake-build-debug/CMakeFiles/part3.dir
-C:/Users/Niels Clayton/Desktop/Notes/NWEN 241/NWEN Assignment 1/part3/cmake-build-debug/CMakeFiles/edit_cache.dir

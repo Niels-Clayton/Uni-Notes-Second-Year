@@ -1,7 +1,0 @@
-C:/Users/niels/Desktop/Notes/NWEN 241/NWEN Assignment 4/cmake-build-debug/CMakeFiles/Test_4.dir
-C:/Users/niels/Desktop/Notes/NWEN 241/NWEN Assignment 4/cmake-build-debug/CMakeFiles/Test_5.dir
-C:/Users/niels/Desktop/Notes/NWEN 241/NWEN Assignment 4/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/niels/Desktop/Notes/NWEN 241/NWEN Assignment 4/cmake-build-debug/CMakeFiles/Test_6.dir
-C:/Users/niels/Desktop/Notes/NWEN 241/NWEN Assignment 4/cmake-build-debug/CMakeFiles/Test_7.dir
-C:/Users/niels/Desktop/Notes/NWEN 241/NWEN Assignment 4/cmake-build-debug/CMakeFiles/Test_main.dir
-C:/Users/niels/Desktop/Notes/NWEN 241/NWEN Assignment 4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
