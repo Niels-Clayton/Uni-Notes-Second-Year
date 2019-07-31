@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.24)  30 JUL 2019 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.24)  31 JUL 2019 12:37
 entering extended mode
 **"./Litrature Review.tex"
 ("Litrature Review.tex"
@@ -302,39 +302,28 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 14.
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-! Undefined control sequence.
-l.24 $ \abs
-           {x} $
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[1
+) [1
 
 {C:/Users/niels/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 ("Litrature Review.aux") ) 
 Here is how much of TeX's memory you used:
- 3025 strings out of 492895
- 42548 string characters out of 3123735
+ 3020 strings out of 492895
+ 42464 string characters out of 3123735
  110752 words of memory out of 3000000
- 6901 multiletter control sequences out of 15000+200000
- 11344 words of font info for 43 fonts, out of 3000000 for 9000
+ 6896 multiletter control sequences out of 15000+200000
+ 10096 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,27p,372b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/niels/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/niels/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/niels
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
-/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mr17.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmss8.pfb>
-Output written on "Litrature Review.pdf" (1 page, 64016 bytes).
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/niels/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/niels/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/
+Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+ss8.pfb>
+Output written on "Litrature Review.pdf" (1 page, 56950 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
+ 26 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
