@@ -58,17 +58,30 @@ hold off
 clear variables; clc;
 
 n = [0:1:10];
-h = power(0.7, n);
-x = (n>=0) - ((n-4)>=0);
+n2 = [0:1:3];
+h = power(0.7, n)
+x = (n2>=0) - ((n2-4)>=0);
 
 y = conv(h,x);
 
 figure(4)
 hold on
+stem(x)
 stem(h)
-%stem(x)
-
+xlabel("n")
+axis([0 11 0 1.5])
+title('Functions $h[n] = 0.7^n$ and $x[n] = u[n] - u[n-4]$ before convolution','interpreter','latex')
 hold off
+
+
+figure(5)
+stem(y)
+title('Convolution of $h[n] = 0.7^n$ and $x[n] = u[n] - u[n-4]$','interpreter','latex')
+xlabel('n')
+
+
+
+
 
 
 
