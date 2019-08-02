@@ -67,23 +67,19 @@ y = conv(h,x);
 
 figure(4)
 stem(n2,x)
-xlabel("n")
-axis([0 11 0 1.5])
-title('Function $x[n] = u[n] - u[n-4]$ before convolution','interpreter','latex')
-
-figure(5)
 stem(n,h)
 xlabel("n")
 axis([0 11 0 1.5])
-title('Function $h[n] = 0.7^n$ before convolution','interpreter','latex')
+title('Functions $h[n] = 0.7^n$ and $x[n] = u[n] - u[n-4]$ before convolution','interpreter','latex')
+hold off
 
 
-figure(6)
+figure(5)
 stem(n3,y)
 title('Convolution of $h[n] = 0.7^n$ and $x[n] = u[n] - u[n-4]$','interpreter','latex')
 xlabel('n')
 
-figure(7)
+figure(6)
 
 
 syms n_2
