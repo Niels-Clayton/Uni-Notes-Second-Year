@@ -49,10 +49,23 @@ In figure 3 we can see that the diode clamp 'clamps' the voltage to continually 
 Calculate $R_{z0}$ and $V_{Z0}$:\\
 $V_{z0} = 2.9V$\\
 $R_{z0} = \frac{\Delta V}{\Delta I}=\frac{3.25 - 2.9}{-20\times 10^{-3}} = 17.5 \Omega $
+
 \subsection{Measured Stability ratio}
 $V_s = 12V \rightarrow V_z =3.181V$\\
 $V_s = 14V \rightarrow V_z =3.28V$\\
-Stability ratio = $\frac{\Delta V_s}{\Delta V_z} = \frac{14-12}{3.28-3.181} = 0.049$
+Stability ratio = $\frac{\Delta V_s}{\Delta V_z} = \frac{3.28-3.181}{14-12} = 0.049$
+
+\subsection{Calculated Stability ratio}
+Using:\\
+$V_{z0} = 2.9V$\\
+$R_{z0} = 17.5 \Omega $\\
+
+Using KVO we can calculate the voltage dissipated across $R_{z0}$ at both 12V and 14V. Using this we can calculate the stability ratio.\\
+$V_{s}-2.9V-R_{z0}I-470I = 0$\\
+$V_s = 12V \rightarrow V_z =3.27V$\\
+$V_s = 14V \rightarrow V_z =3.98V$\\
+Stability ratio = $\frac{\Delta V_s}{\Delta V_z} = \frac{3.98-3.27}{14-12} = 0.036$
+
 
 
 
