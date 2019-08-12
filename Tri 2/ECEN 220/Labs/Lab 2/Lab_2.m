@@ -1,5 +1,23 @@
 %% Question 1
 clear variables; clc;
+syms x k;
+
+t = linspace(0,3,3000);
+period = 3;
+omega = 2*pi/period;
+x_t = exp(-t);
+
+
+%a_func = x_t.*exp(i*k*omega*t)
+
+%a_k = 1/period.*(integral(a_func,0,3));
+
+figure(1);
+plot(t,x_t)
+
+
+%% ooof
+clear variables; clc;
 
 hold on
 t = linspace(0, 1, 1000); % Continuous time sampleing
