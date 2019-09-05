@@ -129,7 +129,7 @@ stem(n,x_n);
 % hold off
 
 figure(2)
-subplot(2,1,[1 2]);
+
 % Plot magnitudes
 p2 = subplot(2,1,1);
 k10 = -2:3;
