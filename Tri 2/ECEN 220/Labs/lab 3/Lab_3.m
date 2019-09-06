@@ -5,8 +5,7 @@ w = (2.*pi)./10;
 t = linspace(0, 10, 1000);
 t1 = linspace(-1,1,1000);
 x = cos(w.*t);
-X = fft(x);
-
+X = fftshift(fft(x));
 
 figure(1)
 
@@ -27,14 +26,16 @@ clc
 clear
 
 t1 = 0:0.01:10;
+t2 = -5:0.01:5;
 x = (t1>=0);
-X = fft(x);
+X = fftshift(fft(x));
 
 subplot(2,1,1);
-plot(t1,abs(X));
+plot(t2,abs(X));
 title("Magnitude of X(w)")
 
 subplot(2,1,2);
-plot(t1,rad2deg(angle(X)));
+
+plot(t2,rad2deg(angle(X)));
 title("Phase of X(w)")
 
