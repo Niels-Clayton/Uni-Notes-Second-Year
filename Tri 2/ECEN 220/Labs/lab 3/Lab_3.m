@@ -1,9 +1,13 @@
 %% Question 1
 clc, clear
 
-w = (2.*pi)./10;
-t = linspace(0, 10, 1000);
-t1 = linspace(-1,1,1000);
+Fs = 100;
+f = 1/10;
+w = (2.*pi).*f;
+
+
+t = 0:1/Fs:10;
+t(max) = 0;
 x = cos(w.*t);
 X = fftshift(fft(x));
 
@@ -14,11 +18,11 @@ plot(t,x);
 title("x(t) = cos(w_0t)")
 
 subplot(3,1,2);
-plot(t1,abs(X));
+plot(t,abs(X));
 title("Magnitude of X(w)")
 
 subplot(3,1,3);
-plot(t1,rad2deg(angle(X)));
+plot(t,rad2deg(angle(X)));
 title("Phase of X(w)")
 
 %% Question 2
