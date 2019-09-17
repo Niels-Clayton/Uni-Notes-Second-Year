@@ -79,10 +79,55 @@ It can also be noted form figure 2 that as the base current limiting resistor in
 \end{figure}
 
 It can be observed in figure 3 that as the base current ($I_B$) increases, the collector current ($I_C$) will increase at an exponential rate. this means that with a relatively low base current, a large collector current can be allowed to flow. This is the basis of the amplification properties of transistors. 
+\pagebreak
 
+\section{Collector Emitter Current vs Collector-Emitter Voltage}
 
+\begin{figure}[h]
+ \begin{center}
+  \fbox{\includegraphics[width = 0.7\textwidth]{character_curves.png}}
+  \vspace{-8pt}
+  \caption{Collector Emitter Current vs Collector-Emitter Voltage}
+ \end{center}
+\end{figure}
+
+\begin{figure}[h]
+\vspace{-20pt}
+ \begin{center}
+  \fbox{\includegraphics[width = 0.7\textwidth]{character_curves_zones.png}}
+  \vspace{-8pt}
+  \caption{Transistor Regions}
+  \vspace{-10pt}
+ \end{center}
+\end{figure}
+
+In figure 4, the collector current $I_C$ vs collector-emitter voltage $V_{CE}$ at different base currents $I_B$ can be seen, and in figure 5, the 3 defined regions of a transistor curve can be seen.\\
+In the cut-off region $I_B$ will be 0A, therefore $I_C$ will also be 0A and the transistor will be off. \\
+In the saturation region $V_{BE} = 0.7V$ meaning that the base-emitter junction will be forward biased, however $V_{CE}$ will be very small, leading to a very small collector-emitter current that is not yet saturated.\\
+In the active region collector-emitter current is saturated, and the greatest transistor gain can be observed. Because of this, currents within the active region are chosen to calculate the gain of the transistor.\\\\
+Base current = 10uA: $\beta = 14$\\
+Base current = 30uA: $\beta = 136.7$\\
+Base current = 50uA: $\beta = 252$\\
+\pagebreak
+
+\section{Using a transistor as a logical NOT}
+
+\begin{figure}[h]
+ \begin{center}
+  \fbox{\includegraphics[width = 0.7\textwidth]{NOT.png}
+  		\includegraphics[width = 0.3\textwidth]{NOT_circuit.png}}
+  \caption{Transistor used as a logical NOT}
+ \end{center}
+\end{figure}
+
+When the voltage into the base of the transistor is below 0.7V, the two hypothetical diodes within the transistor are reverse biased, because of this the voltage difference between $V_{OUT}$ and GND will be 5V. However once the threshold voltage of the diodes is reached (0.7V), the transistor will be considered to be on and have negligible resistance, meaning that 0V will be dropped across $V_{OUT}$ and GND. This behaviour can be seen in figure 6.
+
+A practical use of this circuit is as a rudimentary logical NOT gate. When the input is larger than 0.7V the output will be 0V, and when the input is 0V, the output will be 5V.
 
 \end{document}
+
+
+
 
 \begin{figure}[h]
 \begin{center}
