@@ -56,8 +56,8 @@ T = 10;                     % period of the signal
 N = T.*F_s;                 % Number of samples total
 t = linspace(0, T-Ts, N);   % Values of t to sample at
 
-w_0 = 2*pi/T;
-x = sin(w_0*t);
+w_0 = (1./4)*pi/T;
+x = 3.*pi.*cos(2.*w_0*t) + 5.*pi.*cos(w_0*t);
 
 subplot(3, 1, 1);
 plot(t, x);
