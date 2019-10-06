@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.24)  26 SEP 2019 01:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.24)  6 OCT 2019 15:19
 entering extended mode
-**./lab_3.tex
-(lab_3.tex
+**./lab_4.tex
+(lab_4.tex
 LaTeX2e <2018-12-01>
 ("C:\Users\niels\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -200,8 +200,9 @@ Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
-) (lab_3.aux)
-\openout1 = `lab_3.aux'.
+)
+No file lab_4.aux.
+\openout1 = `lab_4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
@@ -215,7 +216,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -449,10 +449,10 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 112.
 )
-[9] (lab_3.aux) ) 
+[9] (lab_4.aux) ) 
 Here is how much of TeX's memory you used:
- 5253 strings out of 492895
- 70833 string characters out of 3123735
+ 5250 strings out of 492895
+ 70751 string characters out of 3123735
  430871 words of memory out of 3000000
  9085 multiletter control sequences out of 15000+200000
  11044 words of font info for 42 fonts, out of 3000000 for 9000
@@ -467,7 +467,7 @@ els/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
 <C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmr6.pfb><C:/Users/niels/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsy10.pfb>
-Output written on lab_3.pdf (9 pages, 362911 bytes).
+Output written on lab_4.pdf (9 pages, 362911 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
