@@ -1,11 +1,10 @@
 %% 1
 clc, clear;
-syms q t
 
 f_0 = 100;
 M = 4;
-func = (sin(2.*pi.*(2.*q + 1).* f_0.*t))./(2.*q +1);
-x(t) = symsum(func, q, 0, 2) .*(4/pi);
+
+x = square_wave(f_0, 0, 2);
 
 sample_f = 2000;
 upsample_f = M*sample_f;
@@ -29,7 +28,7 @@ ylabel('y')
 subplot(2,1,2);
 stem(t1, y1)
 xlim([30e-3 40e-3])
-title("upsampled x(t)")
+title("Zero inserted x(t)")
 xlabel('t')
 ylabel('y')
 
@@ -79,7 +78,6 @@ clc
 
 delay_filter = zeros(1,L+1);
 delay_filter(L+1) = -1;
-
 delayed = filter(delay_filter, 1, filtered);
 
 
