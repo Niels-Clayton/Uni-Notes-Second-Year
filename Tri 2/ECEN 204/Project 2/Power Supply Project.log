@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.23)  9 OCT 2019 23:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.23)  13 OCT 2019 02:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -152,18 +152,18 @@ Package: wrapfig 2003/01/31  v 3.6
 (./Power Supply Project.aux)
 \openout1 = `"Power Supply Project.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -259,36 +259,225 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 12.
+LaTeX Font Info:    Try loading font information for U+msa on input line 14.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 12.
+LaTeX Font Info:    Try loading font information for U+msb on input line 14.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+<design.png, id=1, 170.9587pt x 144.7006pt>
+File: design.png Graphic file (type png)
+<use design.png>
+Package pdftex.def Info: design.png  used on input line 26.
+(pdftex.def)             Requested size: 204.85672pt x 173.39697pt.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Power Supply Project.au
-x) ) 
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 26--27
+ [] 
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 32--33
+\OT1/cmr/m/n/10.95 in fig-ure 1. This am-pli-fier will utilise a BC547 tran-
+ []
+
+
+Underfull \hbox (badness 2818) in paragraph at lines 32--33
+\OT1/cmr/m/n/10.95 sis-tor in a com-mon emit-ter con-fig-u-ra-tion. The base
+ []
+
+
+Underfull \hbox (badness 3148) in paragraph at lines 32--33
+\OT1/cmr/m/n/10.95 of the tran-sis-tor will be con-nected to the 9V power
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 32--33
+\OT1/cmr/m/n/10.95 of the ini-tial op-er-at-ing point (q-point) of the tran-sis
+-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 34--35
+\OT1/cmr/m/n/10.95 will use a re-sis-tor value of $6\OML/cmm/m/it/10.95 k\OT1/c
+mr/m/n/10.95 
+$ for $\OML/cmm/m/it/10.95 R[]$\OT1/cmr/m/n/10.95 , and $1\OML/cmm/m/it/10.95 k
+\OT1/cmr/m/n/10.95 
+$ for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./design.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+<final.png, id=15, 213.598pt x 158.6728pt>
+File: final.png Graphic file (type png)
+<use final.png>
+Package pdftex.def Info: final.png  used on input line 76.
+(pdftex.def)             Requested size: 358.50317pt x 266.31909pt.
+[2 <./final.png (PNG copy)>]
+<breadboard.jpg, id=21, 3159.805pt x 1584.92125pt>
+File: breadboard.jpg Graphic file (type jpg)
+<use breadboard.jpg>
+Package pdftex.def Info: breadboard.jpg  used on input line 92.
+(pdftex.def)             Requested size: 204.85672pt x 102.73329pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 92--93
+ [] 
+ []
+
+
+Underfull \hbox (badness 3209) in paragraph at lines 98--99
+\OT1/cmr/m/n/10.95 the cir-cuit was pro-to-typed and tested on bread-board,
+ []
+
+
+Underfull \hbox (badness 3179) in paragraph at lines 98--99
+\OT1/cmr/m/n/10.95 and sim-u-lated in LT-Spice to backup the re-sults that
+ []
+
+
+Underfull \hbox (badness 4846) in paragraph at lines 98--99
+\OT1/cmr/m/n/10.95 were achieved on bread-board. Since the brief dic-
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 98--99
+\OT1/cmr/m/n/10.95 tates that the pre-amplifier have a gain of atleast 5
+ []
+
+
+Underfull \hbox (badness 4217) in paragraph at lines 98--99
+\OT1/cmr/m/n/10.95 across the au-di-ble spec-trum be-fore the in-stil-la-tion o
+f
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 98--99
+\OT1/cmr/m/n/10.95 the by-pass ca-pac-i-tor ($\OML/cmm/m/it/10.95 C[]$\OT1/cmr/
+m/n/10.95 ), our cir-cuits per-for-mance was
+ []
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 98--99
+\OT1/cmr/m/n/10.95 tested for a range of fre-quen-cies be-tween 20$\OML/cmm/m/i
+t/10.95 Hz$ \OT1/cmr/m/n/10.95 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+<frequency1.jpg, id=22, 663.98062pt x 392.21532pt>
+File: frequency1.jpg Graphic file (type jpg)
+<use frequency1.jpg>
+Package pdftex.def Info: frequency1.jpg  used on input line 105.
+(pdftex.def)             Requested size: 230.46576pt x 136.13432pt.
+
+Overfull \hbox (32.40903pt too wide) in paragraph at lines 105--106
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+<frequency.jpg, id=23, 666.99188pt x 402.75468pt>
+File: frequency.jpg Graphic file (type jpg)
+<use frequency.jpg>
+Package pdftex.def Info: frequency.jpg  used on input line 134.
+(pdftex.def)             Requested size: 230.46576pt x 139.15945pt.
+
+Overfull \hbox (32.40903pt too wide) in paragraph at lines 134--135
+ [] 
+ []
+
+[3 <./breadboard.jpg> <./frequency1.jpg> <./frequency.jpg>]
+<perfboard.jpg, id=27, 1677.26625pt x 1145.78062pt>
+File: perfboard.jpg Graphic file (type jpg)
+<use perfboard.jpg>
+Package pdftex.def Info: perfboard.jpg  used on input line 163.
+(pdftex.def)             Requested size: 358.50317pt x 244.88693pt.
+ [4 <./perfboard.jpg>] (./Power Supply Project.aux) ) 
 Here is how much of TeX's memory you used:
- 2875 strings out of 492623
- 37939 string characters out of 6135669
- 107613 words of memory out of 5000000
- 6749 multiletter control sequences out of 15000+600000
- 9191 words of font info for 35 fonts, out of 8000000 for 9000
+ 2915 strings out of 492623
+ 38554 string characters out of 6135669
+ 118627 words of memory out of 5000000
+ 6781 multiletter control sequences out of 15000+600000
+ 11044 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,27p,289b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr17.pfb>
-Output written on "Power Supply Project.pdf" (1 page, 46447 bytes).
+ 41i,9n,27p,679b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "Power Supply Project.pdf" (4 pages, 1331811 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

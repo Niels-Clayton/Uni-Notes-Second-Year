@@ -40,7 +40,7 @@ L = 100;
 [H, W] = freqz(h, 1, 500);
 
 subplot(2,1,1);
-plot(n, h)
+stem(n, h)
 title("Low Pass Filter (Time)")
 xlabel('t')
 ylabel('y')

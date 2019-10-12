@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -1851,15 +1851,15 @@ naming: grid - package width</description>
 </classes>
 <parts>
 <part name="T1" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="BC547" device="" package3d_urn="urn:adsk.eagle:package:28523/2"/>
-<part name="R1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device=""/>
-<part name="R2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device=""/>
-<part name="R3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device=""/>
-<part name="R4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device=""/>
+<part name="R_C" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="6k"/>
+<part name="R_E" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="1k"/>
+<part name="R2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="10k"/>
+<part name="R1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="R" device="" value="52k"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+9V" device=""/>
 <part name="GND" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C1" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1"/>
-<part name="C2" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1"/>
-<part name="C3" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1"/>
+<part name="C2" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="10n"/>
+<part name="C1" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="10u"/>
+<part name="C3" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="100u"/>
 </parts>
 <sheets>
 <sheet>
@@ -1867,21 +1867,17 @@ naming: grid - package width</description>
 </plain>
 <instances>
 <instance part="T1" gate="G$1" x="60.96" y="58.42" smashed="yes"/>
-<instance part="R1" gate="G$1" x="63.5" y="73.66" smashed="yes" rot="R90">
+<instance part="R_C" gate="G$1" x="63.5" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="61.722" y="73.66" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="67.31" y="71.12" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R2" gate="G$1" x="63.5" y="45.466" smashed="yes" rot="R90">
+<instance part="R_E" gate="G$1" x="63.5" y="45.466" smashed="yes" rot="R90">
 <attribute name="NAME" x="60.96" y="45.466" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="67.31" y="42.926" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R3" gate="G$1" x="50.038" y="45.72" smashed="yes" rot="R90">
+<instance part="R2" gate="G$1" x="50.038" y="45.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="47.244" y="45.72" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="53.848" y="43.18" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R4" gate="G$1" x="50.038" y="73.66" smashed="yes" rot="R90">
+<instance part="R1" gate="G$1" x="50.038" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="47.244" y="73.66" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="53.848" y="71.12" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="79.502" y="78.74" smashed="yes" rot="R270">
 <attribute name="VALUE" x="78.613" y="80.645" size="1.778" layer="96"/>
@@ -1889,17 +1885,14 @@ naming: grid - package width</description>
 <instance part="GND" gate="G$1" x="79.248" y="38.1" smashed="yes" rot="R90">
 <attribute name="SPICEGROUND" x="79.248" y="38.1" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C1" gate="G$1" x="69.088" y="65.786" smashed="yes" rot="R90">
-<attribute name="NAME" x="71.755" y="70.866" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="73.787" y="67.31" size="1.778" layer="96" rot="R90"/>
+<instance part="C2" gate="G$1" x="69.088" y="65.286" smashed="yes" rot="R90">
+<attribute name="NAME" x="71.755" y="70.366" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="C2" gate="G$1" x="43.18" y="58.42" smashed="yes" rot="R90">
+<instance part="C1" gate="G$1" x="43.18" y="58.42" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.101" y="63.246" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="47.879" y="59.944" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C3" gate="G$1" x="72.136" y="46.736" smashed="yes">
 <attribute name="NAME" x="75.946" y="44.831" size="1.778" layer="95"/>
-<attribute name="VALUE" x="73.66" y="42.037" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -1908,17 +1901,17 @@ naming: grid - package width</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="T1" gate="G$1" pin="C"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="63.5" x2="63.5" y2="65.786" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="65.786" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="66.548" y1="65.786" x2="63.5" y2="65.786" width="0.1524" layer="91"/>
-<junction x="63.5" y="65.786"/>
+<pinref part="R_C" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="63.5" x2="63.5" y2="65.286" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="65.286" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="66.548" y1="65.286" x2="63.5" y2="65.286" width="0.1524" layer="91"/>
+<junction x="63.5" y="65.286"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R_E" gate="G$1" pin="2"/>
 <pinref part="T1" gate="G$1" pin="E"/>
 <wire x1="63.5" y1="50.546" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -1929,21 +1922,21 @@ naming: grid - package width</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="50.038" y1="68.58" x2="50.038" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="B"/>
 <wire x1="50.038" y1="58.42" x2="50.038" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="58.42" x2="50.038" y2="58.42" width="0.1524" layer="91"/>
 <junction x="50.038" y="58.42"/>
 <wire x1="50.038" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="+9V" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R_C" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="78.74" x2="76.962" y2="78.74" width="0.1524" layer="91"/>
 <junction x="63.5" y="78.74"/>
 <wire x1="63.5" y1="78.74" x2="50.038" y2="78.74" width="0.1524" layer="91"/>
@@ -1954,12 +1947,12 @@ naming: grid - package width</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="GND" gate="G$1" pin="0"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="79.248" y1="38.1" x2="72.136" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="72.136" y1="38.1" x2="63.5" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="38.1" x2="50.038" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="50.038" y1="38.1" x2="50.038" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R_E" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="40.386" x2="63.5" y2="38.1" width="0.1524" layer="91"/>
 <junction x="63.5" y="38.1"/>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -1968,18 +1961,19 @@ naming: grid - package width</description>
 <label x="77.724" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="V_OUT" class="0">
+<net name="AC_OUT" class="0">
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="74.168" y1="65.786" x2="80.518" y2="65.786" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="74.168" y1="65.286" x2="80.518" y2="65.286" width="0.1524" layer="91"/>
 <label x="80" y="67" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="V_IN" class="0">
+<net name="AC_IN" class="0">
 <segment>
-<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="58.42" x2="38.1" y2="58.42" width="0.1524" layer="91"/>
-<label x="34.02" y="58.96" size="1.778" layer="95"/>
+<label x="31.48" y="60.23" size="1.778" layer="95"/>
+<junction x="38.1" y="58.42"/>
 </segment>
 </net>
 </nets>
