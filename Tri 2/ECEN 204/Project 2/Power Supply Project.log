@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.23)  13 OCT 2019 02:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.23)  13 OCT 2019 23:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -456,7 +456,20 @@ File: perfboard.jpg Graphic file (type jpg)
 <use perfboard.jpg>
 Package pdftex.def Info: perfboard.jpg  used on input line 163.
 (pdftex.def)             Requested size: 358.50317pt x 244.88693pt.
- [4 <./perfboard.jpg>] (./Power Supply Project.aux) ) 
+ [4 <./perfboard.jpg>]
+File: frequency1.jpg Graphic file (type jpg)
+<use frequency1.jpg>
+Package pdftex.def Info: frequency1.jpg  used on input line 192.
+(pdftex.def)             Requested size: 464.78326pt x 274.54884pt.
+File: frequency1.jpg Graphic file (type jpg)
+<use frequency1.jpg>
+Package pdftex.def Info: frequency1.jpg  used on input line 200.
+(pdftex.def)             Requested size: 464.78326pt x 274.54884pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5] [6] (./Power Supply Project.aux) ) 
 Here is how much of TeX's memory you used:
  2915 strings out of 492623
  38554 string characters out of 6135669
@@ -465,19 +478,19 @@ Here is how much of TeX's memory you used:
  11044 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,9n,27p,679b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Power Supply Project.pdf" (4 pages, 1331811 bytes).
+</usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "Power Supply Project.pdf" (6 pages, 1335341 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 69 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
