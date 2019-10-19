@@ -15,7 +15,7 @@ def cholesky(A1):
     for i in range(n):
 
         try:
-            A[i, i] = np.sqrt(A[i, i] - np.dot(A[i, 0:i], A[i, 0:i]))
+            A[i, i] = np.sqrt(abs(A[i, i] - np.dot(A[i, 0:i], A[i, 0:i])))
         except ValueError:
             error.err('Matrix is not positive definite')
 
