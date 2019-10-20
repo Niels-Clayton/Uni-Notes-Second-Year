@@ -8,25 +8,19 @@ def load():
     return sci.mmread("matrix1.mtx").toarray()
 
 
-def cholesky(A1):
-    A = A1.copy()
-    n = len(A)
+def cholesky(a1):
+    a = a1.copy()
+    n = len(a)
 
     for i in range(n):
 
-        try:
-            A[i, i] = np.sqrt(abs(A[i, i] - np.dot(A[i, 0:i], A[i, 0:i])))
-        except ValueError:
-            error.err('Matrix is not positive definite')
-
-
         for j in range(i + 1, n):
-            A[j, i] = (A[j, i] - np.dot(A[j, 0:i], A[i, 0:i])) / A[i, i]
+            a[j, i] = (a[j, i] - np.dot(a[j, 0:i], a[i, 0:i])) / a[i, i]
 
     for k in range(1, n):
-        A[0:k, k] = 0.0
+        a[0:k, k] = 0.0
 
-    return A
+    return a
 
 
 def band_cholesky(A1, p):
@@ -35,13 +29,12 @@ def band_cholesky(A1, p):
 
     for j in range(n):
 
+        for k in range(max(0, j - p), j):
+            λ = min(k + p, n - 1)
+            A[j:λ + 1, j] = A[j:λ + 1, j] - np.dot(A[j, k], A[j:λ + 1, k])
 
-        for k in range( max(0, j-p), j):
-            lam = min(k+p, n-1)
-            A[j:lam+1, j] = A[j:lam+1, j] - np.dot(A[j, k], A[j:lam+1, k])
-
-        lam = min(j+p, n-1)
-        A[j:lam+1, j] = A[j:lam+1, j] / np.sqrt(abs(A[j,j]))
+        λ = min(j + p, n - 1)
+        A[j:λ + 1, j] = A[j:λ + 1, j] / np.sqrt(abs(A[j, j]))
 
     for k in range(1, n):
         A[0:k, k] = 0.0
@@ -49,48 +42,108 @@ def band_cholesky(A1, p):
     return A
 
 
-def inverse_cholesky(L1):
-    L = L1.copy()
-    L_T = np.transpose(L)
-    return np.matmul(L, L_T)
+def compressed_band_cholesky(A1):
+    A = A1.copy()
+    n = len(A)
+
+    for j in range(n):
+
+        for k in range(max(0, j - p), j):
+            λ = min(k + p, n - 1)
+            A[j:λ + 1, j] = A[j:λ + 1, j] - np.dot(A[j, k], A[j:λ + 1, k])
+
+        λ = min(j + p, n - 1)
+        A[j:λ + 1, j] = A[j:λ + 1, j] / np.sqrt(abs(A[j, j]))
+
+    for k in range(1, n):
+        A[0:k, k] = 0.0
+
+    return A
+
+
+def inverse_cholesky(l1):
+    l = l1.copy()
+    l_t = np.transpose(l)
+    return np.matmul(l, l_t)
+
+
+
+def matrix_solution(a1):
+    n = len(a1)
+    b = []
+    a = a1.copy()
+
+    for i in range(n):
+        b.append(sum(a[i]))
+    return np.asarray(b)
+
+
+def findError(b):
+    n = len(b)
+    exact = np.ones(n)
+    print(np.linalg.norm(b-exact))
+
+
+
+def solve(l, b):
+    n = len(b)
+
+    # solution of ly=b
+
+    for k in range(n):
+        b[k] = (b[k] - np.dot(l[k, 0:k], b[0:k])) / l[k, k]
+
+    # solution of l^t x =y
+
+    for k in range(n - 1, -1, -1):
+        b[k] = (b[k] - np.dot(l[k + 1:n, k], b[k + 1:n])) / l[k, k]
+
+    return b
+
+
+def forward_sub(A, b, p):
+    n = len(A)
+
+    for j in range(n):
+        λ = min(j + p , n)
+        b[j] = b[j]/A[j,j]
+        b[j+1:λ] = b[j+1:λ] - A[j+1:λ,j]*b[j]
+    return b
+
+
+
+def backward_sub(A1, b, p):
+    n = len(b)
+    A = A1.copy()
+
+    for j in range(n-1, -1, -1):
+        λ = max(0, j - p)
+        b[j] = b[j] / A[j, j]
+        b[λ:j] = b[λ:j] - (np.transpose(A[j,λ:j])*b[j])
+    return b
+
+
+def band_solve(A1, b1, p):
+    A = A1.copy()
+    b = b1.copy()
+
+    forward_sub(A, b, p)
+    backward_sub(A, b, p)
+    return b
+
+
+def band_storage(A, p):
+    n = len(A)
+    B = np.zeros((p, n))
+
+    for j in range(n):
+        for i in range(j, min(n,j+p)):
+            B[i-j, j] = A[i,j]
+    return B
 
 A = load()
+L = band_cholesky(A, 48)
+A_b = band_storage(A, 48)
 
-
-L1 = cholesky(A)
-L2 = band_cholesky(A,48)
-L3 = np.linalg.cholesky(A)
-
-plt.spy(L1)
-plt.title("Implemented cholesky algorithim")
+plt.spy(A_b)
 plt.show()
-
-plt.spy(L2)
-plt.title("Implemented band_cholesky algorithim")
-plt.show()
-
-plt.spy(L3)
-plt.title("numpy.linalg cholesky algorithim")
-plt.show()
-
-L1_inverse = inverse_cholesky(L1)
-L2_inverse = inverse_cholesky(L2)
-L3_inverse = inverse_cholesky(L3)
-
-plt.spy(L1_inverse)
-plt.title("Inverse of Implemented cholesky algorithim")
-plt.show()
-error = abs(np.sum(A))-abs(np.sum(L1_inverse))
-print("error relative to original matrix: {}".format(error))
-
-plt.spy(L2_inverse)
-plt.title("Inverse of Implemented band_cholesky algorithim")
-plt.show()
-error = abs(np.sum(A))-abs(np.sum(L2_inverse))
-print("error relative to original matrix: {}".format(error))
-
-plt.spy(L3_inverse)
-plt.title("Inverse of numpt.linalg algorithim")
-plt.show()
-error = abs(np.sum(A))-abs(np.sum(L3_inverse))
-print("error relative to original matrix: {}".format(error))
