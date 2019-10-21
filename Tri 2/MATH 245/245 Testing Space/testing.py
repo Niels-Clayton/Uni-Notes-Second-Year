@@ -8,19 +8,19 @@ def load():
     return sci.mmread("matrix1.mtx").toarray()
 
 
-def cholesky(a1):
-    a = a1.copy()
-    n = len(a)
+def cholesky(A1):
+    A = A1.copy()
+    n = len(A)
 
     for i in range(n):
 
         for j in range(i + 1, n):
-            a[j, i] = (a[j, i] - np.dot(a[j, 0:i], a[i, 0:i])) / a[i, i]
+            A[j, i] = (A[j, i] - np.dot(A[j, 0:i], A[i, 0:i])) / A[i, i]
 
     for k in range(1, n):
-        a[0:k, k] = 0.0
+        A[0:k, k] = 0.0
 
-    return a
+    return A
 
 
 def band_cholesky(A1, p):
@@ -31,26 +31,8 @@ def band_cholesky(A1, p):
 
         for k in range(max(0, j - p), j):
             λ = min(k + p, n - 1)
-            A[j:λ + 1, j] = A[j:λ + 1, j] - np.dot(A[j, k], A[j:λ + 1, k])
-
-        λ = min(j + p, n - 1)
-        A[j:λ + 1, j] = A[j:λ + 1, j] / np.sqrt(abs(A[j, j]))
-
-    for k in range(1, n):
-        A[0:k, k] = 0.0
-
-    return A
-
-
-def compressed_band_cholesky(A1):
-    A = A1.copy()
-    n = len(A)
-
-    for j in range(n):
-
-        for k in range(max(0, j - p), j):
-            λ = min(k + p, n - 1)
-            A[j:λ + 1, j] = A[j:λ + 1, j] - np.dot(A[j, k], A[j:λ + 1, k])
+            z = A[j:λ + 1, j] - np.dot(A[j, k], A[j:λ + 1, k])
+            A[j:λ + 1, j] = z
 
         λ = min(j + p, n - 1)
         A[j:λ + 1, j] = A[j:λ + 1, j] / np.sqrt(abs(A[j, j]))
@@ -142,8 +124,10 @@ def band_storage(A, p):
     return B
 
 A = load()
-L = band_cholesky(A, 48)
 A_b = band_storage(A, 48)
+L1 = band_cholesky(A, 48)
+
 
 plt.spy(A_b)
 plt.show()
+
