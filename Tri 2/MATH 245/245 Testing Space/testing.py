@@ -30,12 +30,12 @@ def band_cholesky(A1, p):
     for j in range(n):
 
         for k in range(max(0, j - p), j):
-            λ = min(k + p, n - 1)
-            z = A[j:λ + 1, j] - np.dot(A[j, k], A[j:λ + 1, k])
-            A[j:λ + 1, j] = z
+            λ = min(k + p + 1 , n)
+            z = A[j:λ, j] - np.dot(A[j, k], A[j:λ, k])
+            A[j:λ, j] = z
 
-        λ = min(j + p, n - 1)
-        A[j:λ + 1, j] = A[j:λ + 1, j] / np.sqrt(abs(A[j, j]))
+        λ = min(j + p + 1, n)
+        A[j:λ, j] = A[j:λ, j] / np.sqrt(abs(A[j, j]))
 
     for k in range(1, n):
         A[0:k, k] = 0.0
@@ -87,7 +87,7 @@ def forward_sub(A, b, p):
     n = len(A)
 
     for j in range(n):
-        λ = min(j + p , n)
+        λ = min(j + (p + 1) , n)
         b[j] = b[j]/A[j,j]
         b[j+1:λ] = b[j+1:λ] - A[j+1:λ,j]*b[j]
     return b
@@ -99,7 +99,7 @@ def backward_sub(A1, b, p):
     A = A1.copy()
 
     for j in range(n-1, -1, -1):
-        λ = max(0, j - p)
+        λ = max(0, j - (p + 1))
         b[j] = b[j] / A[j, j]
         b[λ:j] = b[λ:j] - (np.transpose(A[j,λ:j])*b[j])
     return b
@@ -116,18 +116,84 @@ def band_solve(A1, b1, p):
 
 def band_storage(A, p):
     n = len(A)
-    B = np.zeros((p, n))
+    B = np.zeros((p+1, n))
 
     for j in range(n):
-        for i in range(j, min(n,j+p)):
+        for i in range(j, min(n,j+p+1)):
             B[i-j, j] = A[i,j]
     return B
 
+
+
+def compressed_band_cholesky(A1, p):
+    A = A1.copy()
+    n = len(A)
+
+    for j in range(n):
+
+        for k in range(max(0, j - p), j):
+
+            λ = min(k + 1 + p, n)
+            A[0:λ -j, j] = A[0:λ -j, j] - A[j - k, k]* A[j-k : λ -k, k]
+
+        λ = min(j + 1 + p, n)
+        A[0:λ -j, j] = A[0:λ - j, j] / np.sqrt(abs(A[0, j]))
+
+
+    return A
+
+
+def compressed_forward_sub(A, b, p):
+    n = len(A)
+
+    for j in range(n):
+        λ = min(j + (p+1) , n)
+        b[j] = b[j]/A[0,j]
+        b[j+1:λ] = b[j+1:λ] - A[1:λ-j,j]*b[j]
+    return b
+
+
+
+def compressed_backward_sub(A1, b, p):
+    n = len(b)
+    A = A1.copy()
+
+    for j in range(n-1, -1, -1):
+        λ = max(0, j - (p))
+        b[j] = b[j] / A[0, j]
+
+        for i in range(λ, j):
+            b[i] = b[i] - A[j-i,i] *b[j]
+
+    return b
+
+
+def compressed_band_solve(A1, b1, p):
+    A = A1.copy()
+    b = b1.copy()
+
+    compressed_forward_sub(A, b, p)
+    compressed_backward_sub(A, b, p)
+    return b
+
+
+
+
+
+
 A = load()
+b = matrix_solution(A)
+
 A_b = band_storage(A, 48)
-L1 = band_cholesky(A, 48)
-
-
 plt.spy(A_b)
 plt.show()
+
+L_b = band_cholesky(A, 48)
+L_b = band_storage(L_b, 48)
+plt.spy(L_b)
+plt.show()
+
+x = compressed_band_solve(L_b, b, 2)
+
+print(x)
 
