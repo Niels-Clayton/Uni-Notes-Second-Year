@@ -179,17 +179,17 @@ def compressed_band_solve(A1, b1, p):
 
 
 
-A = load()
-b = matrix_solution(A)
-
-L = band_cholesky(A, 48)
-L_b = band_storage(L, 48)
-
-g = backward_sub(L, b.copy(), 48)
-h = compressed_backward_sub(L_b, b.copy(), 48)
-
-print(g[3:6])
-print(h[3:6])
+# A = load()
+# b = matrix_solution(A)
+#
+# L = band_cholesky(A, 48)
+# L_b = band_storage(L, 48)
+#
+# g = backward_sub(L, b.copy(), 48)
+# h = compressed_backward_sub(L_b, b.copy(), 48)
+#
+# print(g[3:6])
+# print(h[3:6])
 
 
 A = load()
