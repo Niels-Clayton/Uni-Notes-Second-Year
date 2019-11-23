@@ -7,8 +7,7 @@
  * Student ID: 300437590
  * Name: Niels Clayton
  */
-#ifndef __MY_EDITOR_HH__
-#define __MY_EDITOR_HH__
+#pragma once
 
 #include "editor.hh"
 
@@ -29,5 +28,3 @@ namespace editor {
 
     };
 }
-
-#endif /*__MY_EDITOR_HH__*/
